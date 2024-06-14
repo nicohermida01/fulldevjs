@@ -5,7 +5,7 @@ export function AppLogo(props?: SVGProps<SVGElement>) {
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='200'
-			height='50'
+			height='40'
 			fill='none'
 			viewBox='0 0 745 202'
 			{...props}
