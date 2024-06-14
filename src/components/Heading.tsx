@@ -2,7 +2,7 @@ import { AppLogo } from './AppLogo'
 
 export function Heading() {
 	return (
-		<div className='w-full h-96 relative flex flex-col justify-center items-center'>
+		<div className='w-full min-h-[60vh] relative flex flex-col justify-center items-center'>
 			<div className='w-[1000px] h-[600px] absolute -z-10 heading-gradient'></div>
 			<AppLogo height={130} width={500} />
 
