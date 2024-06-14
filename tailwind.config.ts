@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			maxWidth: {
-				app: '1300px',
+				app: '1400px',
 			},
 			colors: {
 				PRIMARY: '#7001FF',
