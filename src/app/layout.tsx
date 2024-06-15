@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Topbar } from '@/components/Topbar'
+import { PageWrapper } from '@/components/PageWrapper'
 
 const poppins = Poppins({
 	weight: ['400', '500', '600', '700'],
@@ -24,7 +25,8 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={poppins.className}>
 				<Topbar />
-				{children}
+
+				<PageWrapper>{children}</PageWrapper>
 			</body>
 		</html>
 	)

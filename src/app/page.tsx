@@ -5,7 +5,7 @@ import { contentList } from '@/ssot/content'
 
 export default function Home() {
 	return (
-		<PageWrapper>
+		<>
 			<Heading />
 			<div>
 				<h2 className='text-2xl font-bold my-12 text-TEXT_BLACK'>
@@ -17,6 +17,6 @@ export default function Home() {
 					))}
 				</div>
 			</div>
-		</PageWrapper>
+		</>
 	)
 }

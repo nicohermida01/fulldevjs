@@ -4,6 +4,7 @@ export type articlePreview = {
 	imageAlt: string
 	description: string
 	date: string
+	link: string
 }
 
 export const contentList: articlePreview[] = [
@@ -14,6 +15,7 @@ export const contentList: articlePreview[] = [
 		description:
 			'Si estas interesado en el mundo de la informatica y la programacion, este articulo es para vos!',
 		date: 'Junio 1, 2024',
+		link: 'porque-estudiar-programacion',
 	},
 	{
 		title: 'Aprende Javascript',
@@ -22,6 +24,7 @@ export const contentList: articlePreview[] = [
 		description:
 			'Te gusta el mundo del desarrollo web? Entonces tienes que saber Javascript',
 		date: 'Junio 2, 2024',
+		link: '#',
 	},
 	{
 		title: 'Aprende HTML',
@@ -29,6 +32,7 @@ export const contentList: articlePreview[] = [
 		imageAlt: 'Imagen del post3',
 		description: 'Crea la estructura de tu web con HTML',
 		date: 'Junio 3, 2024',
+		link: '#',
 	},
 	{
 		title: 'Aprende CSS',
@@ -36,6 +40,7 @@ export const contentList: articlePreview[] = [
 		imageAlt: 'imagen del post4',
 		description: 'Dale estilo y vida a tu pagina web con CSS',
 		date: 'Junio 4, 2024',
+		link: '#',
 	},
 	{
 		title: 'Qué son las APIs?',
@@ -44,6 +49,7 @@ export const contentList: articlePreview[] = [
 		description:
 			'Aca te contamos cómo podes consumir datos de servicos de terceros!',
 		date: 'Junio 6, 2024',
+		link: 'que-son-las-apis',
 	},
 	{
 		title: 'Para qué sirve Git?',
@@ -52,5 +58,6 @@ export const contentList: articlePreview[] = [
 		description:
 			'Una de las herramientas mas utilizadas y comunes a la hora de desarrollar codigo.',
 		date: 'Junio 7, 2024',
+		link: '#',
 	},
 ]
