@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Topbar } from '@/components/Topbar'
 import { PageWrapper } from '@/components/PageWrapper'
+import { SearchboxStoreProvider } from '@/providers/searchbox-store-provider'
 
 const poppins = Poppins({
 	weight: ['400', '500', '600', '700'],
@@ -24,9 +25,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={poppins.className}>
-				<Topbar />
-
-				<PageWrapper>{children}</PageWrapper>
+				<SearchboxStoreProvider>
+					<Topbar />
+					<PageWrapper>{children}</PageWrapper>
+				</SearchboxStoreProvider>
 			</body>
 		</html>
 	)
