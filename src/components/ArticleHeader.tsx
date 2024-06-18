@@ -1,3 +1,4 @@
+import { LabelList } from '@/ssot/labels'
 import Image from 'next/image'
 
 type ArticleHeaderProps = {
@@ -5,7 +6,7 @@ type ArticleHeaderProps = {
 	description: string
 	lastUpdate: string
 	imgSrc: string
-	labelList: string[]
+	labelList: LabelList[]
 }
 
 export function ArticleHeader({
@@ -30,7 +31,7 @@ export function ArticleHeader({
 					{labelList.map((label, i) => (
 						<li
 							key={i}
-							className='bg-[#eff2fb] py-1 px-3 rounded-xl capitalize text-sm'
+							className='bg-BG_GRAY1 py-1 px-3 rounded-xl capitalize text-sm'
 						>
 							{label}
 						</li>

@@ -12,7 +12,7 @@ export default function Post() {
 				description={article.description}
 				lastUpdate={article.date}
 				imgSrc={article.image}
-				labelList={['programación', 'actualidad']}
+				labelList={article.labelList}
 			/>
 
 			<h3 className='font-bold text-xl mt-4'>Subtitulo 1</h3>

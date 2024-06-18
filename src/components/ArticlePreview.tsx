@@ -1,4 +1,4 @@
-import { articlePreview } from '@/ssot/content'
+import { articlePreview } from '@/ssot/articles-db'
 import Image from 'next/image'
 import Link from 'next/link'
 
