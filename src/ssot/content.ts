@@ -1,23 +1,32 @@
 export type articlePreview = {
+	id: number
 	title: string
 	image: string
-	imageAlt: string
 	description: string
 	date: string
-	link: string
+	pageUrl: string
+}
+
+export const defaultArticle: articlePreview = {
+	id: 0,
+	date: 'undefined',
+	description: 'undefined',
+	image: 'undefined',
+	pageUrl: 'undefined',
+	title: 'undefined',
 }
 
 export const contentList: articlePreview[] = [
 	{
+		id: 1,
 		title: 'Porqué estudiar programación?',
-		image: '/post1.jpg',
-		imageAlt: 'Imagen del post1',
+		image: '/porque-estudiar-programacion.jpg',
 		description:
 			'Si estas interesado en el mundo de la informatica y la programacion, este articulo es para vos!',
 		date: 'Junio 1, 2024',
-		link: 'porque-estudiar-programacion',
+		pageUrl: 'porque-estudiar-programacion',
 	},
-	{
+	/* {
 		title: 'Aprende Javascript',
 		image: '/post2.jpg',
 		imageAlt: 'Imagen del post2',
@@ -59,5 +68,5 @@ export const contentList: articlePreview[] = [
 			'Una de las herramientas mas utilizadas y comunes a la hora de desarrollar codigo.',
 		date: 'Junio 7, 2024',
 		link: '#',
-	},
+	}, */
 ]

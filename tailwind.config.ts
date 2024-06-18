@@ -16,7 +16,7 @@ const config: Config = {
 				PRIMARY_GHOST: '#F2E9FF',
 
 				TEXT_BLACK: '#333',
-				TEXT_GRAY_SECONDARY: '#bbb',
+				TEXT_GRAY_SECONDARY: '#b6bbc4',
 			},
 		},
 	},

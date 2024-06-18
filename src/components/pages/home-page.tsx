@@ -21,8 +21,8 @@ export function HomePage() {
 				</p>
 
 				<div className='flex flex-wrap  gap-8'>
-					{contentList.map((article, index) => (
-						<ArticlePreview key={index} {...article} />
+					{contentList.map(article => (
+						<ArticlePreview key={article.id} {...article} />
 					))}
 				</div>
 			</div>
