@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export function SearchIcon(props: SVGProps<SVGElement>) {
+export function SearchIcon(props: SVGProps<any>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
