@@ -18,6 +18,9 @@ const config: Config = {
 				BG_GRAY1: '#eff2fb',
 				BG_GRAY1_HOVER: '#e1e3ea',
 
+				BG_GRAY2: '#D3D5DC',
+				BG_GRAY2_HOVER: '#E1E4EC',
+
 				TEXT_BLACK: '#333',
 				TEXT_GRAY_SECONDARY: '#b6bbc4',
 			},
