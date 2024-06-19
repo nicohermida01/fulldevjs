@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+
 import './globals.css'
 import { Topbar } from '@/components/Topbar'
 import { PageWrapper } from '@/components/PageWrapper'
+import { Footer } from '@/components/Footer'
+
 import { SearchboxStoreProvider } from '@/providers/searchbox-store-provider'
 
 const poppins = Poppins({
@@ -28,6 +31,7 @@ export default function RootLayout({
 				<SearchboxStoreProvider>
 					<Topbar />
 					<PageWrapper>{children}</PageWrapper>
+					<Footer />
 				</SearchboxStoreProvider>
 			</body>
 		</html>

@@ -13,7 +13,7 @@ export function HomePage({ articles }: HomePageProps) {
 		<>
 			<Heading />
 
-			<div>
+			<div className='pb-10'>
 				<h2 className='text-2xl font-bold my-12 text-TEXT_BLACK'>
 					Contenido destacado
 				</h2>
