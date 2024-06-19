@@ -38,7 +38,7 @@ export function ArticleNav({ sections }: ArticleNavProps) {
 
 	return (
 		<nav className='w-[300px] block fixed'>
-			<h4 className='font-bold'>Contenido</h4>
+			<h4 className='font-bold mb-1'>Contenido</h4>
 			<Scrollspy
 				items={sections}
 				currentClassName=''
