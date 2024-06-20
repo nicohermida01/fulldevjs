@@ -4,7 +4,11 @@ import { LabelList } from '@/ssot/labels'
 export const getArticlesToShow = (input?: string): Article[] => {
 	if (input) {
 		return articlesDB.filter(
-			a => a.title.includes(input) || a.labelList.includes(input as LabelList)
+			a =>
+				a.title.toLowerCase().includes(input.toLowerCase()) ||
+				a.labelList
+					.map(item => item.toLowerCase())
+					.includes(input.toLowerCase())
 		)
 	}
 
