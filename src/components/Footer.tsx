@@ -2,7 +2,7 @@ import { Brand } from './Brand'
 
 export function Footer() {
 	return (
-		<footer className='w-full bg-white py-[100px]'>
+		<footer className='w-full bg-white py-[100px] border-t-2 border-BG_GRAY1'>
 			<div className='w-full max-w-app mx-auto px-10'>
 				<div className='flex items-center justify-around'>
 					<Brand logoHeight={50} logoWidth={200} />
