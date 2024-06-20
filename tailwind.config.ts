@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 
+export const PRIMARY_COLOR = '#7001FF'
+
 const config: Config = {
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +14,7 @@ const config: Config = {
 				app: '1400px',
 			},
 			colors: {
-				PRIMARY: '#7001FF',
+				PRIMARY: PRIMARY_COLOR,
 				PRIMARY_GHOST: '#F2E9FF',
 
 				BG_GRAY1: '#eff2fb',

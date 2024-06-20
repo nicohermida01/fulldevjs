@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import NextTopLoader from 'nextjs-toploader'
 
 import './globals.css'
+import { PRIMARY_COLOR } from '../../tailwind.config'
+
 import { Topbar } from '@/components/Topbar'
 import { PageWrapper } from '@/components/PageWrapper'
 import { Footer } from '@/components/Footer'
@@ -29,6 +32,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={poppins.className}>
 				<SearchboxStoreProvider>
+					<NextTopLoader color={PRIMARY_COLOR} />
 					<Topbar />
 					<PageWrapper>{children}</PageWrapper>
 					<Footer />
