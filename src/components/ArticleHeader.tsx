@@ -1,11 +1,12 @@
+import Image, { StaticImageData } from 'next/image'
+
 import { LabelList } from '@/ssot/labels'
-import Image from 'next/image'
 
 type ArticleHeaderProps = {
 	title: string
 	description: string
 	lastUpdate: string
-	imgSrc: string
+	image: StaticImageData
 	labelList: LabelList[]
 }
 
@@ -13,7 +14,7 @@ export function ArticleHeader({
 	title,
 	description,
 	lastUpdate,
-	imgSrc,
+	image,
 	labelList,
 }: ArticleHeaderProps) {
 	return (
@@ -40,10 +41,8 @@ export function ArticleHeader({
 			</div>
 
 			<Image
-				src={imgSrc}
-				alt='Imagen descriptiva del articulo'
-				height='400'
-				width='700'
+				src={image}
+				alt='Imagen del articulo'
 				className='w-[50%] h-auto rounded-md'
 			/>
 		</header>

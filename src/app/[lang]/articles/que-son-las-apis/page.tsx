@@ -1,3 +1,8 @@
+import { ArticleContainer } from '@/components/ArticleContainer'
+import { getArticle } from '@/lib/getArticle'
+
 export default function Post() {
-	return <div className='mt-[100px]'>Qué son las APIs?</div>
+	const article = getArticle(5)
+
+	return <ArticleContainer article={article} />
 }

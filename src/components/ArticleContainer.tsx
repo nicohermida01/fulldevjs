@@ -1,8 +1,11 @@
+import { ArticleNav } from '@/components/ArticleNav'
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { ArticlePaper } from '@/components/ArticlePaper'
+import { ArticleSection } from '@/components/ArticleSection'
+
 import { Article } from '@/ssot/articles-db'
-import { ArticleNav } from './ArticleNav'
-import { ArticleSection } from './ArticleSection'
+
+import { getArticleImage } from '@/lib/getArticleImage'
 
 type ArticleContainerProps = {
 	article: Article
@@ -20,8 +23,8 @@ export function ArticleContainer({ article }: ArticleContainerProps) {
 					<ArticleHeader
 						title={article.title}
 						description={article.description}
-						lastUpdate={article.date}
-						imgSrc={article.image}
+						lastUpdate={article.date} // TODO
+						image={getArticleImage(article.id)}
 						labelList={article.labelList}
 					/>
 

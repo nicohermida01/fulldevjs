@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export function Topbar() {
 	return (
-		<header className='w-full bg-white py-2 shadow-sm fixed z-10'>
+		<header className='w-full bg-white py-2 shadow-sm fixed top-0 z-10'>
 			<div className='w-full max-w-app mx-auto flex justify-between px-10'>
 				<Link href='/'>
 					<AppLogo />
