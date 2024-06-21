@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+import { ReactNode } from 'react'
 
 import './globals.css'
 import { PRIMARY_COLOR } from '../../../tailwind.config'
@@ -23,13 +24,17 @@ export const metadata: Metadata = {
 	description: 'A place for the developer',
 }
 
+type LayoutProps = {
+	children: ReactNode
+	params: { lang: string }
+}
+
 export default function RootLayout({
 	children,
-}: Readonly<{
-	children: React.ReactNode
-}>) {
+	params,
+}: Readonly<LayoutProps>) {
 	return (
-		<html lang='es'>
+		<html lang={params.lang}>
 			<body className={poppins.className}>
 				<SearchboxStoreProvider>
 					<NextTopLoader color={PRIMARY_COLOR} />
