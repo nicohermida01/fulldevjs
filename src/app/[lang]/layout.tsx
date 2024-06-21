@@ -3,7 +3,7 @@ import { Poppins } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 
 import './globals.css'
-import { PRIMARY_COLOR } from '../../tailwind.config'
+import { PRIMARY_COLOR } from '../../../tailwind.config'
 
 import { Topbar } from '@/components/Topbar'
 import { PageWrapper } from '@/components/PageWrapper'
@@ -29,7 +29,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='es'>
 			<body className={poppins.className}>
 				<SearchboxStoreProvider>
 					<NextTopLoader color={PRIMARY_COLOR} />

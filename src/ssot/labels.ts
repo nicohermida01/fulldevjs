@@ -1,17 +1,16 @@
 export const labelList = [
 	// General Programming Concepts
-	'Conceptos de Programación',
-	'Programación',
+	'Programming',
 	'APIs',
 
 	// Web development
-	'Programación Web',
+	'Web Development',
 	'JavaScript',
 	'HTML',
 	'CSS',
 
 	// Development Tools and Environments
-	'Herramientas de Desarrollo',
+	'Development Tools',
 	'Git',
 ] as const
 export type LabelList = (typeof labelList)[number]

@@ -29,7 +29,7 @@ export const articlesDB: Article[] = [
 			'Si estas interesado en el mundo de la informatica y la programacion, este articulo es para vos!',
 		date: 'Junio 1, 2024',
 		pageUrl: 'porque-estudiar-programacion',
-		labelList: ['Programación', 'Conceptos de Programación'],
+		labelList: ['Programming'],
 	},
 	{
 		id: 2,
@@ -39,7 +39,7 @@ export const articlesDB: Article[] = [
 			'Te gusta el mundo del desarrollo web? Entonces tienes que saber Javascript',
 		date: 'Junio 2, 2024',
 		pageUrl: '#',
-		labelList: ['Programación Web', 'JavaScript'],
+		labelList: ['Web Development', 'JavaScript'],
 	},
 	{
 		id: 3,
@@ -48,7 +48,7 @@ export const articlesDB: Article[] = [
 		description: 'Crea la estructura de tu web con HTML',
 		date: 'Junio 3, 2024',
 		pageUrl: '#',
-		labelList: ['HTML', 'Programación Web'],
+		labelList: ['HTML', 'Web Development'],
 	},
 	{
 		id: 4,
@@ -57,7 +57,7 @@ export const articlesDB: Article[] = [
 		description: 'Dale estilo y vida a tu pagina web con CSS',
 		date: 'Junio 4, 2024',
 		pageUrl: '#',
-		labelList: ['Programación Web', 'CSS'],
+		labelList: ['Web Development', 'CSS'],
 	},
 	{
 		id: 5,
@@ -67,7 +67,7 @@ export const articlesDB: Article[] = [
 			'Aca te contamos cómo podes consumir datos de servicos de terceros!',
 		date: 'Junio 6, 2024',
 		pageUrl: 'que-son-las-apis',
-		labelList: ['Conceptos de Programación', 'APIs'],
+		labelList: ['Programming', 'APIs'],
 	},
 	{
 		id: 6,
@@ -77,7 +77,7 @@ export const articlesDB: Article[] = [
 			'Una de las herramientas mas utilizadas y comunes a la hora de desarrollar codigo.',
 		date: 'Junio 7, 2024',
 		pageUrl: '#',
-		labelList: ['Herramientas de Desarrollo', 'Git'],
+		labelList: ['Development Tools', 'Git'],
 	},
 ]
 
